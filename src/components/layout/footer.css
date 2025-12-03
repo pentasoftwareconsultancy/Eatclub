@@ -1,0 +1,13 @@
+.ec-site-footer { background:#05060a; color:#d2d6db; padding:40px 20px; }
+.footer-top { display:grid; grid-template-columns: 1fr 160px 200px 160px; gap:28px; max-width:1200px; margin:0 auto 20px; }
+.footer-col h4 { color:#ffffff; margin-bottom:8px }
+.footer-col ul { list-style:none; padding:0; margin:0 }
+.footer-col ul li { margin:6px 0 }
+.footer-col a { color: #bfc6cc; text-decoration:none }
+.footer-col a:hover { color:#ffffff }
+.footer-brand h3 { color:#ffffff; margin-bottom:8px }
+.footer-bottom { border-top:1px solid rgba(255,255,255,0.04); padding-top:16px; display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:0 auto }
+.socials { display:flex; gap:8px }
+.social-btn { background:transparent; border:1px solid rgba(255,255,255,0.06); width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff }
+.social-btn:hover { transform:translateY(-2px); border-color: rgba(255,255,255,0.12) }
+.copyright { font-size:0.9rem; color:#9fa6ac }
