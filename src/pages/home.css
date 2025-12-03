@@ -1,0 +1,9 @@
+/* Basic home page styles */
+.home-main { max-width:1200px; margin:24px auto; padding:0 20px }
+.home-hero { background:#f7fdfb; padding:36px; border-radius:12px; text-align:center }
+.home-hero h1 { margin:0 0 12px }
+.home-hero p { margin:0 0 18px; color:#334155 }
+.hero-cta .primary { background:#0aa69a; color:white; padding:10px 18px; border-radius:8px; border:none; cursor:pointer }
+.why-section { margin-top:28px }
+.why-cards { display:grid; grid-template-columns: repeat(3,1fr); gap:12px; margin-top:12px }
+.why-cards .card { background:white; padding:16px; border-radius:8px; box-shadow:0 6px 18px rgba(16,24,40,0.04); text-align:center }

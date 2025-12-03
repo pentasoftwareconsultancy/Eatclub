@@ -1,0 +1,5 @@
+.logo-address { display:flex; align-items:center; gap:12px }
+.logo-link { display:flex; align-items:center; gap:8px; text-decoration:none; color:inherit }
+.logo-mark { width:36px; height:36px; background:#0aa69a; color:white; display:flex; align-items:center; justify-content:center; border-radius:8px; font-weight:700 }
+.logo-text { font-weight:700; font-size:1.1rem }
+.address-btn { background:#f8f9fa; border:1px solid #e6e6e6; padding:6px 10px; border-radius:8px; font-size:0.9rem }
