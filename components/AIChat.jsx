@@ -1,20 +1,15 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Sparkles, X, Send } from 'lucide-react';
-import { ChatMessage, MenuItem } from '../types';
 import { getAIRecommendations } from '../services/geminiService';
 
-interface Props {
-  menuItems: MenuItem[];
-}
-
-export const AIChat: React.FC<Props> = ({ menuItems }) => {
+export const AIChat = ({ menuItems }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState('');
-  const [messages, setMessages] = useState<ChatMessage[]>([
+  const [messages, setMessages] = useState([
     { role: 'model', text: 'Hi! Not sure what to eat? Tell me your mood (e.g., "Spicy and cheap" or "Healthy dinner") and I will help!' }
   ]);
   const [isLoading, setIsLoading] = useState(false);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -38,7 +33,7 @@ export const AIChat: React.FC<Props> = ({ menuItems }) => {
     setIsLoading(false);
   };
 
-  const handleKeyPress = (e: React.KeyboardEvent) => {
+  const handleKeyPress = (e) => {
     if (e.key === 'Enter') handleSend();
   };
 

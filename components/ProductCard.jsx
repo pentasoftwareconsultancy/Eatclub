@@ -1,12 +1,7 @@
 import React from 'react';
-import { MenuItem } from '../types';
 import { Info } from 'lucide-react';
 
-interface Props {
-  item: MenuItem;
-}
-
-export const ProductCard: React.FC<Props> = ({ item }) => {
+export const ProductCard = ({ item }) => {
   return (
     <div className="bg-white rounded-xl hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full overflow-hidden group">
       {/* Image Area */}

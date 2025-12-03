@@ -1,5 +1,4 @@
 import React from 'react';
-import { MenuCategory } from '../types';
 import { 
   UtensilsCrossed, 
   Gift, 
@@ -16,13 +15,7 @@ import {
   IceCream
 } from 'lucide-react';
 
-interface Props {
-  categories: MenuCategory[];
-  activeCategory: string;
-  onSelectCategory: (id: string) => void;
-}
-
-const getIcon = (id: string) => {
+const getIcon = (id) => {
   switch (id) {
     case 'together-combos': return <ShoppingBag size={20} />; // Closest to the "bag/combo" icon
     case 'daily-biryani': return <UtensilsCrossed size={20} />;
@@ -41,7 +34,7 @@ const getIcon = (id: string) => {
   }
 };
 
-export const Sidebar: React.FC<Props> = ({ categories, activeCategory, onSelectCategory }) => {
+export const Sidebar = ({ categories, activeCategory, onSelectCategory }) => {
   return (
     <div className="w-full md:w-[280px] bg-white md:h-[calc(100vh-72px)] md:sticky md:top-[72px] overflow-y-auto hide-scrollbar py-6 pb-20">
       <div className="px-6 mb-4">

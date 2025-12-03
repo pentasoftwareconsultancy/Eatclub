@@ -1,12 +1,7 @@
 import React from 'react';
 import { Star, Clock, Heart } from 'lucide-react';
-import { Restaurant } from '../types';
 
-interface Props {
-  data: Restaurant;
-}
-
-export const RestaurantCard: React.FC<Props> = ({ data }) => {
+export const RestaurantCard = ({ data }) => {
   const discountedPrice = Math.round(data.priceForTwo * (1 - data.discountPercentage / 100));
 
   return (

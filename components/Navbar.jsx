@@ -1,7 +1,7 @@
 import React from 'react';
 import { Search, ShoppingCart, ChevronDown, Percent } from 'lucide-react';
 
-export const Navbar: React.FC = () => {
+export const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 h-[72px]">
       <div className="max-w-[1400px] mx-auto px-4 h-full flex items-center justify-between">
