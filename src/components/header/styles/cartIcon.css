@@ -1,0 +1,3 @@
+.cart-icon-link { display:inline-flex; align-items:center; gap:6px; text-decoration:none; color:inherit; position:relative; }
+.cart-badge { background:#ff6b6b; color:white; padding:3px 7px; border-radius:12px; font-size:0.8rem; }
+.cart-emoji { font-size:1.2rem; }
